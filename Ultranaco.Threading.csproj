@@ -2,6 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Version>0.0.1</Version>
+    <Authors>Alejandro Piña</Authors>
+    <Company>Ultranaco Labs</Company>
   </PropertyGroup>
 
 </Project>

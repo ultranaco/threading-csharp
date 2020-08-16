@@ -1,1 +1,14 @@
-
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <!-- The identifier that must be unique within the hosting gallery -->
+        <id>Ultranaco.Threading</id>
+        <version>0.0.1</version>
+        <authors>Alejandro Piña</authors>
+        <owners>ultranaco</owners>
+        <projectUrl>http://github.com/ultranaco/threading-csharp</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Utilities to handle concurrent tasks</description>
+        <tags>threading tasks concurrent concurrency thread parallel</tags>
+    </metadata>
+</package>

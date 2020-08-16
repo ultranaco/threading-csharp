@@ -9,14 +9,12 @@ namespace Falcon.Threading
     public static ConcurrentDictionary<string, SemaphoreSlim> _semaphores = new ConcurrentDictionary<string, SemaphoreSlim>();
 
     private SemaphoreSlim _semaphore;
-    private bool _raiseException;
 
-    public SemaphoreLock(string semaphoreName, int timeOut = 1000, int concurrency = 2, bool raiseException = false)
+    public SemaphoreLock(string semaphoreName, int timeOut = 5000, int concurrency = 2)
     {
-      _raiseException = raiseException;
-      _semaphore = _semaphores.GetOrAdd(semaphoreName, (key) => { return new SemaphoreSlim(concurrency, concurrency); });
+      _semaphore = _semaphores.GetOrAdd(semaphoreName, (key) => { return new SemaphoreSlim(0, concurrency); });
       _semaphore.Wait(timeOut);
-    }
+    } 
 
     public void Dispose()
     {
@@ -26,8 +24,7 @@ namespace Falcon.Threading
       }
       catch(Exception e)
       {
-        if (_raiseException)
-          throw e;
+        throw e;
       }
     }
   }

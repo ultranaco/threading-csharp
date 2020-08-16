@@ -1,9 +1,0 @@
-/home/alex/dev/dotnet/falcon.libraries/Ultranaco.Threading/bin/Debug/netcoreapp3.1/Ultranaco.Threading.deps.json
-/home/alex/dev/dotnet/falcon.libraries/Ultranaco.Threading/bin/Debug/netcoreapp3.1/Ultranaco.Threading.dll
-/home/alex/dev/dotnet/falcon.libraries/Ultranaco.Threading/bin/Debug/netcoreapp3.1/Ultranaco.Threading.pdb
-/home/alex/dev/dotnet/falcon.libraries/Ultranaco.Threading/obj/Debug/netcoreapp3.1/Ultranaco.Threading.csprojAssemblyReference.cache
-/home/alex/dev/dotnet/falcon.libraries/Ultranaco.Threading/obj/Debug/netcoreapp3.1/Ultranaco.Threading.AssemblyInfoInputs.cache
-/home/alex/dev/dotnet/falcon.libraries/Ultranaco.Threading/obj/Debug/netcoreapp3.1/Ultranaco.Threading.AssemblyInfo.cs
-/home/alex/dev/dotnet/falcon.libraries/Ultranaco.Threading/obj/Debug/netcoreapp3.1/Ultranaco.Threading.csproj.CoreCompileInputs.cache
-/home/alex/dev/dotnet/falcon.libraries/Ultranaco.Threading/obj/Debug/netcoreapp3.1/Ultranaco.Threading.dll
-/home/alex/dev/dotnet/falcon.libraries/Ultranaco.Threading/obj/Debug/netcoreapp3.1/Ultranaco.Threading.pdb
