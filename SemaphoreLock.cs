@@ -2,17 +2,21 @@
 using System.Collections.Concurrent;
 using System.Threading;
 
-namespace Falcon.Threading
+namespace Ultranaco.Threading
 {
   public class SemaphoreLock : IDisposable
   {
     public static ConcurrentDictionary<string, SemaphoreSlim> _semaphores = new ConcurrentDictionary<string, SemaphoreSlim>();
-
     private SemaphoreSlim _semaphore;
+    private string Name;
 
-    public SemaphoreLock(string semaphoreName, int timeOut = 5000, int concurrency = 2)
+    /// <summary> SemaphoreLock lock execution by tag name and concurrent degree</summary>
+    /// <param name="semaphoreName">Used to tag many instances of semaphores</param>
+    /// <param name="concurrency">Number of executions allowed by semaphoreName</param>
+    public SemaphoreLock(string semaphoreName, int concurrency = 1, int timeOut = 5000)
     {
-      _semaphore = _semaphores.GetOrAdd(semaphoreName, (key) => { return new SemaphoreSlim(0, concurrency); });
+      this.Name = semaphoreName;
+      this._semaphore = _semaphores.GetOrAdd(semaphoreName, (key) => { return new SemaphoreSlim(concurrency, concurrency); });
       _semaphore.Wait(timeOut);
     } 
 
@@ -20,11 +24,11 @@ namespace Falcon.Threading
     {
       try
       {
-        _semaphore.Release();
+          _semaphore.Release();
       }
-      catch(Exception e)
+      catch
       {
-        throw e;
+        Console.WriteLine("Semaphore Counts: {0}", _semaphore.CurrentCount);
       }
     }
   }

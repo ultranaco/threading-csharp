@@ -3,7 +3,7 @@
     <metadata>
         <!-- The identifier that must be unique within the hosting gallery -->
         <id>Ultranaco.Threading</id>
-        <version>0.0.1</version>
+        <version>0.0.2</version>
         <authors>Alejandro Piña</authors>
         <owners>ultranaco</owners>
         <projectUrl>http://github.com/ultranaco/threading-csharp</projectUrl>

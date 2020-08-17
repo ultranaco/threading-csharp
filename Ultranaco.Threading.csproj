@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <Version>0.0.2</Version>
+    <Version>0.0.5</Version>
     <Authors>Alejandro Piña</Authors>
     <Company>Ultranaco Labs</Company>
     <RepositoryUrl>http://github.com/ultranaco/threading-csharp</RepositoryUrl>
