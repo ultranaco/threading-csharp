@@ -2,12 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <Version>0.0.6</Version>
+    <Version>0.0.7</Version>
     <Authors>Alejandro Piña</Authors>
     <Company>Ultranaco Labs</Company>
-    <RepositoryUrl>http://github.com/ultranaco/threading-csharp</RepositoryUrl>
+    <RepositoryUrl>https://github.com/ultranaco/threading-csharp</RepositoryUrl>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <Description>Library to handle concurrent tasks. \n Repository: http://github.com/ultranaco/threading-csharp </Description>
+    <Description>Library to handle concurrent tasks. \n Repository: https://github.com/ultranaco/threading-csharp </Description>
     <PackageTags>threading;tasks;concurrent;concurrency;thread;parallel</PackageTags>
   </PropertyGroup>
 
